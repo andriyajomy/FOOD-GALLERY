@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Imbue:opsz,wght@10..100,500&family=Oswald&family=Pacifico&family=Teko:wght@700&display=swap');
+*{
+    font-family: 'Imbue', serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgba(88, 5, 5, 0.896);
+    height: 30px;
+    color: rgb(228, 217, 202);
+    text-align: center;
+    padding-top: 15px;
+}
+nav{
+    background-color: rgba(88, 5, 5, 0.896);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    
+}
+nav ul{
+    display: flex;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    margin: 30px;
+    color: rgb(228, 217, 202);
+    
+}
+nav ul li a:hover{
+    color: rgb(208, 186, 99);
+    
+}
+section video{
+    width: 100%;
+    pointer-events: none;/* allow hover events to pass through video*/
+
+
+    
+    background-size: cover;
+}
+#aa{
+    color:beige;
+    position:absolute;
+    top: 25%;
+    left: 3%;
+}
+#ab{
+    color: rgba(220, 142, 87, 0.568);
+    position:absolute;
+    top:28%;
+    left: 5%;
+}
+#ac{
+    color: beige;
+    position: absolute;
+    top: 32%;
+    left:7% ;
+
+}
+#ad{
+    color: rgba(220, 142, 87, 0.568);
+    position:absolute;
+    top: 35%;
+    left: 9%;
+
+}
+.row1{
+    /* background-color:  rgba(88, 5, 5, 0.896); */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:space-around;
+    
+
+   
+}
+.col1{
+    width: 300px;
+    height: 350px;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5%;
+    
+
+    
+    
+}
+
+.row2{
+    /* background-color:  rgba(88, 5, 5, 0.896); */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    
+    justify-content:space-around;
+    margin-top: 0px;
+    
+}
+h3{
+    color: rgb(132, 45, 63);
+
+}
+h3:hover{
+    color: coral;
+}
+h5 ,h6{
+    color: coral;
+}
+button{
+    width: 80px;
+    background-color: burlywood;
+    color: rgb(118, 53, 6);
+    border-radius: 10%;
+    height: 8%;
+    border: 2px solid ;
+}
+button:hover{
+    background-color: coral;
+
+}
+footer {
+    background-color: rgb(118, 53, 6);;
+    text-align: center;
+    height: 100PX;
+}
+footer P{
+    padding-top: 30PX;
+    margin: 20PX;
+}
+.col2{
+    width: 300px;
+    height: 350px;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 10px;
+    margin-top: 0%;
+    border-radius: 5%;
+
+}
+.container{
+    position: relative;
+    text-align: right;
+    color: bisque;
+}
+.bottom-right{
+    font-size: large;
+    position: absolute;
+    bottom: 70px;
+    right:16px;
+}
+
+.bottom-right:hover{
+    color:coral
+}
+/* section {
+    position: relative;
+    z-index: -1; /* Place the video below other elements */
+
+
+/* section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* Allow hover events to pass through the video */
+
+    .steps{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 7px 0;
+    
+        justify-content: center;
+    }
+    .steps .box{
+    
+        text-align: center;
+        padding: 20px;
+
+    }
+    .steps .box img{
+        border-radius: 50%;
+        border: 2px solid antiquewhite;
+        box-shadow: 2px 3px 4px gray;
+    }
+
+
+
+
+    .reviews .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap: 1rem;
+    }
+ .reviews .box-container .box{
+    text-align: center;
+    padding: 10px;
+    border: 3px solid rgb(192, 188, 188);
+    box-shadow: 2px 3px 4px rgb(52, 45, 45);
+    border-radius: .5rem;
+    flex: 1 1 28rem;
+    background: bisque;
+   
+    
+ }
+ .reviews .box-container .box img{
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -45px;
+    object-fit:fill;
+    height:4rem;
+    width: 4rem;
+ }
+
+ .gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+ }
+ .gallery .box-container .box{
+    height: 25rem;
+    flex: 1 1 28rem;
+    border: 3px solid rgb(192, 188, 188);
+    box-shadow: 2px 3px 4px rgb(52, 45, 45);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+
+ }
+ .gallery .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+ }
+ .gallery .box-container .box .content{
+    position: absolute;
+    top: -140%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255,0.8);
+    padding: 2rem;
+    padding-top: 7rem;
+padding-right: 5rem;
+ }
+ .gallery .box-container .box .content p{
+    
+    padding: 2rem ;
+    color: rgb(114, 47, 23);
+ }
+ .gallery .box-container .box .content h3{
+    text-align: center;
+ }
+ .gallery .box-container .box:hover .content{
+    top: 0;
+ }
+
+ @media screen and (max-width:400px)
+ {
+    
+            
+            section video{
+                width: 100%;
+                height: 100%;
+
+            }
+            nav ul li a{
+                display: flex;
+                /* flex-wrap: wrap;
+                flex: 0 0 2rem; */
+                width: 100%;
+                margin: 10px;
+                padding: 0px;
+            }
+            #aa{
+                position: absolute;
+                top: 23%;
+                left: 5%;
+            }
+            #ab{
+                top: 27%;
+                left: 8%;
+            }
+            #ac{
+                top: 33%;
+                left:14% ;
+            }
+            #ad{
+             top: 38%;
+             left:17% ;
+            }
+            .row1  {
+                width: 100%;
+                height: 1600px;
+                display: flex;
+            flex-direction: column;
+            padding-bottom: 5px;
+                
+            
+                align-items: center;
+
+            }
+            .col1{
+                width: 300px;
+               height: 350px;
+               margin-top: 5%; 
+             } 
+            .row2{
+                width: 100%;
+                 height: 1600px;
+                display: flex;
+            flex-direction: column;
+                align-items: center;
+                padding-bottom: 5px;
+
+            }
+            .col2{
+                width: 300px;
+                height: 350px;
+                /* margin-left: 20%; */
+                margin-top: 5%;
+            }
+            
+        }
